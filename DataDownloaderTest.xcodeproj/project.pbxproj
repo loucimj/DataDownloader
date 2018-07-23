@@ -12,9 +12,13 @@
 		41B15B5D2104CAC000584566 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B15B5B2104CAC000584566 /* Main.storyboard */; };
 		41B15B5F2104CAC100584566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B15B5E2104CAC100584566 /* Assets.xcassets */; };
 		41B15B622104CAC100584566 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B15B602104CAC100584566 /* LaunchScreen.storyboard */; };
+		41B15B6A2104CADE00584566 /* DataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B15B692104CADE00584566 /* DataDownloader.swift */; };
+		41BE2F402104FC6D00D0F766 /* NotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE2F3F2104FC6D00D0F766 /* NotificationSender.swift */; };
+		69A27644F14C7CA62DBBBB6F /* Pods_DataDownloaderTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89ED683841A810C1ABBC6A1 /* Pods_DataDownloaderTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16B51A16AE2025197FCD3CFB /* Pods-DataDownloaderTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataDownloaderTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataDownloaderTest/Pods-DataDownloaderTest.release.xcconfig"; sourceTree = "<group>"; };
 		41B15B542104CAC000584566 /* DataDownloaderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataDownloaderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B15B572104CAC000584566 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41B15B592104CAC000584566 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		41B15B5E2104CAC100584566 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41B15B612104CAC100584566 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41B15B632104CAC100584566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B15B692104CADE00584566 /* DataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDownloader.swift; sourceTree = "<group>"; };
+		41BE2F3F2104FC6D00D0F766 /* NotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSender.swift; sourceTree = "<group>"; };
+		9DC7404824B20A3578075D22 /* Pods-DataDownloaderTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataDownloaderTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataDownloaderTest/Pods-DataDownloaderTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F89ED683841A810C1ABBC6A1 /* Pods_DataDownloaderTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataDownloaderTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69A27644F14C7CA62DBBBB6F /* Pods_DataDownloaderTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D642AF8A5571DF75E32E1CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F89ED683841A810C1ABBC6A1 /* Pods_DataDownloaderTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41B15B4B2104CAC000584566 = {
 			isa = PBXGroup;
 			children = (
 				41B15B562104CAC000584566 /* DataDownloaderTest */,
 				41B15B552104CAC000584566 /* Products */,
+				82D4179EE046F616807E3D4C /* Pods */,
+				3D642AF8A5571DF75E32E1CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +79,19 @@
 				41B15B5E2104CAC100584566 /* Assets.xcassets */,
 				41B15B602104CAC100584566 /* LaunchScreen.storyboard */,
 				41B15B632104CAC100584566 /* Info.plist */,
+				41B15B692104CADE00584566 /* DataDownloader.swift */,
+				41BE2F3F2104FC6D00D0F766 /* NotificationSender.swift */,
 			);
 			path = DataDownloaderTest;
+			sourceTree = "<group>";
+		};
+		82D4179EE046F616807E3D4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DC7404824B20A3578075D22 /* Pods-DataDownloaderTest.debug.xcconfig */,
+				16B51A16AE2025197FCD3CFB /* Pods-DataDownloaderTest.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41B15B662104CAC100584566 /* Build configuration list for PBXNativeTarget "DataDownloaderTest" */;
 			buildPhases = (
+				8A43D71E7FB0A367C38BB20B /* [CP] Check Pods Manifest.lock */,
 				41B15B502104CAC000584566 /* Sources */,
 				41B15B512104CAC000584566 /* Frameworks */,
 				41B15B522104CAC000584566 /* Resources */,
+				4C6D54D028510328E09322EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +128,11 @@
 				TargetAttributes = {
 					41B15B532104CAC000584566 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,13 +167,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C6D54D028510328E09322EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DataDownloaderTest/Pods-DataDownloaderTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataDownloaderTest/Pods-DataDownloaderTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A43D71E7FB0A367C38BB20B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataDownloaderTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41B15B502104CAC000584566 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				41B15B5A2104CAC000584566 /* ViewController.swift in Sources */,
+				41B15B6A2104CADE00584566 /* DataDownloader.swift in Sources */,
 				41B15B582104CAC000584566 /* AppDelegate.swift in Sources */,
+				41BE2F402104FC6D00D0F766 /* NotificationSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +356,7 @@
 		};
 		41B15B672104CAC100584566 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC7404824B20A3578075D22 /* Pods-DataDownloaderTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +375,7 @@
 		};
 		41B15B682104CAC100584566 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B51A16AE2025197FCD3CFB /* Pods-DataDownloaderTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
